@@ -1,0 +1,4 @@
+/.idea
+/workerman.log
+/composer.lock
+/vendor

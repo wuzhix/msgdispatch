@@ -1,0 +1,13 @@
+{
+  "require":{
+    "juanpiorg/wechatcorp":"dev-master",
+    "swiftmailer/swiftmailer": "^5.4",
+    "juanpiorg/rtx": "1.0.0",
+    "predis/predis": "*"
+  },
+  "repositories": [
+    {"type": "composer", "url": "https://packagist.juanpi.org"},
+    {"type": "composer", "url": "https://packagist.phpcomposer.com"},
+    {"packagist": false}
+  ]
+}

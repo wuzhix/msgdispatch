@@ -2,23 +2,20 @@
 
 return array(
     //存储消息redis
-    'Email_redis_key' => 'email',	//redis的key
-    'redis_ip' => '127.0.0.1',		//redis的ip
-    'redis_port' => 6379,			//redis的port
-    'redis_db' => 0,				//redis的db
-    'requirepass' => 'password',	//redis的密码
+    'email_redis_key' => 'oa:msg:email',    //redis的key
+    'rtx_redis_key' => 'oa:msg:rtx',        //redis的key
+    'wechat_redis_key' => 'oa:msg:wechat',    //redis的key
+    'redis_ip' => '127.0.0.1',        //redis的ip
+    'redis_port' => 6379,            //redis的port
+    'redis_db' => 0,                //redis的db
+    'requirepass' => 'password',    //redis的密码
 
-    'mail_host' => 'mail.com',	//邮件服务器
-    'mail_port' => 25,			//邮件服务器端口
-    'mail_password' => 'password',//发件人邮箱密码
-    'mail_charset' => 'UTF-8',
-    'mail_encoding' => 'base64',
-    'mail_sender' => 'send@mail.com',//发件人邮箱用户名
-    'mail_smtpdebug' => 0,
-    'mail_smtpauth' => true,
+    'db_ip' => '127.0.0.1',     //数据库ip
+    'db_port' => '27017',       //数据库端口
+    'db_name' => 'oa_msg',      //数据库名称
+    'db_email_collection' => 'email', //集合名称
+    'db_rtx_collection' => 'rtx', //集合名称
+    'db_wechat_collection' => 'wechat', //集合名称
 
-    'db_ip' => '127.0.0.1',	//数据库ip
-    'db_username' => 'user',//数据库连接用户名
-    'db_password' => 'password',//数据库连接密码
-    'db' => 'db',	//数据库名称
+    'send_reply' => 3,      //发送重试时，最大总共发送次数
 );
